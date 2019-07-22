@@ -19,11 +19,13 @@
     <script type="text/javascript">
       function ChangeCanvas()
       {
-        //不知道为什么获取的window.outerWidth比实际的小，所以需要校正
-        document.getElementById("gameContainer").style.width = window.innerWidth + "px";
-        document.getElementById("gameContainer").style.height = window.innerWidth/window.outerWidth*window.outerHeight + "px";
-        document.getElementById("#canvas").style.width = window.innerWidth + "px";
-        document.getElementById("#canvas").style.height = window.innerWidth/window.outerWidth*window.outerHeight + "px";
+        setInterval(function () {
+          //不知道为什么获取的window.outerWidth比实际的小，所以需要校正
+          document.getElementById("gameContainer").style.width = window.innerWidth + "px";
+          document.getElementById("gameContainer").style.height = window.innerWidth/window.outerWidth*window.outerHeight + "px";
+          document.getElementById("#canvas").style.width = window.innerWidth + "px";
+          document.getElementById("#canvas").style.height = window.innerWidth/window.outerWidth*window.outerHeight + "px";
+        },100);
       }
     </script>
   </body>
