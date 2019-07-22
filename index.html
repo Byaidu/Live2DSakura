@@ -19,10 +19,12 @@
     <script type="text/javascript">
       function ChangeCanvas()
       {
-         document.getElementById("gameContainer").style.width = window.outerWidth + "px";
-         document.getElementById("gameContainer").style.height = window.outerHeight + "px";
-         document.getElementById("#canvas").style.width = window.outerWidth + "px";
-         document.getElementById("#canvas").style.height = window.outerHeight + "px";
+         setInterval(function () {  
+             document.getElementById("gameContainer").style.width = window.outerWidth + "px";
+             document.getElementById("gameContainer").style.height = window.outerHeight + "px";
+             document.getElementById("#canvas").style.width = window.outerWidth + "px";
+             document.getElementById("#canvas").style.height = window.outerHeight + "px";
+         },100);
       }
     </script>
   </body>
