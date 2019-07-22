@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Live2D</title>
@@ -20,10 +19,10 @@
     <script type="text/javascript">
       function ChangeCanvas()
       {
-         document.getElementById("gameContainer").style.width = window.innerWidth + "px";
-         document.getElementById("gameContainer").style.height = window.innerHeight + "px";
-         document.getElementById("#canvas").style.width = window.innerWidth + "px";
-         document.getElementById("#canvas").style.height = window.innerHeight + "px";
+         document.getElementById("gameContainer").style.width = window.outerWidth + "px";
+         document.getElementById("gameContainer").style.height = window.outerHeight + "px";
+         document.getElementById("#canvas").style.width = window.outerWidth + "px";
+         document.getElementById("#canvas").style.height = window.outerHeight + "px";
       }
     </script>
   </body>
